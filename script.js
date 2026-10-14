@@ -1,0 +1,1 @@
+document.querySelector('.btn-sm').addEventListener('click',()=>{const q=document.querySelector('#search').value.trim().toLowerCase();if(!q)return;const target=[...document.querySelectorAll('section')].find(s=>s.textContent.toLowerCase().includes(q));if(target){target.scrollIntoView({behavior:'smooth'});}else{alert('No matching topic. Try HTML, C or Java.');}});
